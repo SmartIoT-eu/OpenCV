@@ -1,0 +1,25 @@
+    $primary: red;
+    @import './bootstrap/bootstrap';
+    body {
+        background-color: crimson;
+    }
+    
+    .container-fuild {
+        .container {
+            p {
+                margin: 15px;
+                font-weight: 900;
+                text-decoration: line-through;
+                color: yellow;
+            }
+        }
+    }
+    
+    ul {
+        li {
+            text-decoration: none;
+            a {
+                color: yellow;
+            }
+        }
+    }
