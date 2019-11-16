@@ -1,25 +1,41 @@
-    $primary: red;
-    @import './bootstrap/bootstrap';
-    body {
-        background-color: crimson;
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+@import './bootstrap/bootstrap';
+$font-primary:'Roboto',
+sans-serif;
+$font-secundary: 'Montserrat',
+sans-serif;
+$primary-color: #0088C2;
+body {
+    font-family: $font-secundary !important;
+}
+
+//Nombre de la web
+.descripcion {
+    background-color: black;
+    p {
+        text-align: center;
+        color: white;
+        font-family: auto;
+        justify-content: center;
     }
-    
-    .container-fuild {
-        .container {
-            p {
-                margin: 15px;
-                font-weight: 900;
-                text-decoration: line-through;
-                color: yellow;
-            }
+}
+
+// NAVBAR
+.navbar {
+    font-family: $font-primary !important;
+    background-color: $primary-color !important;
+    // Tamaño del logo
+    .navbar-brand {
+        max-width: 80px;
+        max-height: 80px;
+        text-align: center;
+    }
+    .navbar-collapse {
+        justify-content: center;
+        a.nav-link {
+            text-transform: uppercase;
+            margin-right: auto;
+            font-size: larger;
         }
     }
-    
-    ul {
-        li {
-            text-decoration: none;
-            a {
-                color: yellow;
-            }
-        }
-    }
+}
