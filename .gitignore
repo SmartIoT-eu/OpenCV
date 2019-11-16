@@ -1,0 +1,3 @@
+base/CACHE/*
+base/__pycache__/*
+curri/__pycache__/*
