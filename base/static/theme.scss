@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
 @import './bootstrap/bootstrap';
-$font-primary:'Roboto',
-sans-serif;
-$font-secundary: 'Montserrat',
-sans-serif;
+$font-primary:'Roboto', sans-serif;
+$font-secundary: 'Montserrat', sans-serif;
 $primary-color: #0088C2;
+
 body {
     font-family: $font-secundary !important;
 }
@@ -45,6 +44,19 @@ body {
             font-size: larger;
         }
     }
+}
+
+// FOOTER
+footer {
+    height: 50px;
+    background: red;
+    .container {
+        justify-content: center;
+    }
+}
+
+.github-corner {
+    transform: rotate(-90deg) !important;
 }
 
 // mobil
