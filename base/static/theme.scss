@@ -94,15 +94,4 @@ body {
     }
 }
 
-// FOOTER
-footer {
-    height: 50px;
-    background: red;
-    .container {
-        justify-content: center;
-    }
-}
-
-.github-corner {
-    transform: rotate(-90deg) !important;
-}
+@import 'alexa-style.scss';
