@@ -32,11 +32,12 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'djangocms_admin_style',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'base',
+    'base.apps.BaseConfig',
     'django.contrib.staticfiles',
     'compressor',
     'ckeditor',
@@ -108,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 STATICFILES_FINDERS=[
    'compressor.finders.CompressorFinder',
 ]
-
+CMS_ENABLE_UPDATE_CHECK = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -130,14 +131,25 @@ USE_TZ = True
 
 
 
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'templates'),
-)
-STATICFILES_DIRS = (
-     os.path.join(BASE_DIR, 'static'),
-)
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+# TEMPLATE_DIRS = (
+#     os.path.join(BASE_DIR, 'templates'),
+# )
+# STATICFILES_DIRS = (
+#      os.path.join(BASE_DIR, 'static'),
+# )
+# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS =[ os.path.join(BASE_DIR, 'static'), ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 COMPRESS_ROOT = 'base/static'
 COMPRESS_PRECOMPILERS = (
@@ -160,3 +172,8 @@ CKEDITOR_CONFIGS = {
     }
 }
 
+## media
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+ADMIN_MEDIA_PREFIX = '/static/admin/'

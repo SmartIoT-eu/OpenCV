@@ -12,6 +12,10 @@ body {
 //Nombre de la web
 .descripcion {
     background-color: black;
+    .container {
+        padding-top: 9px;
+        padding-bottom: 1px;
+    }
     p {
         text-align: center;
         color: white;
@@ -33,9 +37,21 @@ body {
     .navbar-collapse {
         justify-content: center;
         a.nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-transform: uppercase;
             margin-right: auto;
             font-size: larger;
+        }
+    }
+}
+
+// mobil
+@media (max-width: 700px) {
+    .descripcion {
+        p {
+            font-size: smaller;
         }
     }
 }

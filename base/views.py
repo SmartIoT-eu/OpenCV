@@ -1,5 +1,7 @@
 from django.shortcuts import render, HttpResponse
+from .models import Profile
 
 # Create your views here.
 def index(request):
-    return render(request,"base/base.html")
+    profiles = Profile.objects.all()
+    return render(request,"base/base.html",{'profiles':profiles})
