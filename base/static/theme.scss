@@ -12,6 +12,10 @@ body {
 //Nombre de la web
 .descripcion {
     background-color: black;
+    .container {
+        padding-top: 9px;
+        padding-bottom: 1px;
+    }
     p {
         text-align: center;
         color: white;
@@ -33,9 +37,72 @@ body {
     .navbar-collapse {
         justify-content: center;
         a.nav-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-transform: uppercase;
             margin-right: auto;
             font-size: larger;
+            position: relative;
+        }
+        .nav-item.active {
+            a.nav-link::before {
+                content: "";
+                position: absolute;
+                top: -4px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                width: 8px;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid black;
+            }
         }
     }
+}
+
+// profile_detail
+.profile_detail {
+    .card {
+        .card-body {
+            min-height: 200px;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            padding: 0px !important;
+            p.card-text {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        h5.card-title {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
+
+// mobil
+@media (max-width: 700px) {
+    .descripcion {
+        p {
+            font-size: smaller;
+        }
+    }
+}
+
+// FOOTER
+footer {
+    height: 50px;
+    background: red;
+    .container {
+        justify-content: center;
+    }
+}
+
+.github-corner {
+    transform: rotate(-90deg) !important;
 }

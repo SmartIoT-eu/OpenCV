@@ -1,3 +1,4 @@
 base/CACHE/*
 base/__pycache__/*
 curri/__pycache__/*
+base/CACHE/css/*.css

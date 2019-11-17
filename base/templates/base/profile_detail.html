@@ -1,0 +1,25 @@
+
+{% for profile in profiles %}
+
+	      <!-- Perfiles -->
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <img class="img-fluid" src="{{profile.image.url}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{profile.name}}</h5>
+                        <p class="card-text">{{profile.info}}</p>
+                        {% if profile.url %}
+                            <p><a href="{{ profile.url }}">Ver más</a></p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+
+        {% comment %} <p>{{profile.name}}</p>
+        <p>{{profile.info}}</p>
+        <img class="img-fluid" src="{{profile.image.url}}" alt=""> {% endcomment %}
+{% endfor %}
+
+

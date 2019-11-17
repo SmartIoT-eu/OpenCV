@@ -1,24 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Liam Docherty | London Web Developer &amp; GFX designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        height: 10vh;
+        background-color: #4D5061;
+    }
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a {
+        display: inline-block;
+        padding: 3.5vh 8px 4px;
+        color: white;
+        text-decoration: none;
+        font-size: 14pt;
+        font-family: 'Roboto', sans-serif;
+    }
+    nav ul li:hover a {
+        text-decoration: none;
+        color: red;
+        border-bottom: 1px solid red;
+    }
+    #logo {
+        padding-top: 2vh;
+        padding-left: 20px;
+        float: left;
+    }
+    section {
+        position: relative;
+    }
+    .section1 {
+        height: 93vh;
+        background-color: #FFFFFF;
+        text-align: center;
+    }
+    .section2 {
+        height: 93vh;
+        background-color: #A59E8C;
+        text-align: center;
+        color: white;
+        padding-top: 23vh;
+    }
+    .contact_section {
+        height: 93vh;
+        background-color: grey;
+    }
+    .hero {
+        height: 750px;
+    }
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .container-fluid {
+        padding: 60px 50px;
+    }
+    .bg-grey {
+        background-color: #f6f6f6;
+    }
+    .logo-small {
+        color: #000000;
+        font-size: 50px;
+    }
+    .logo {
+        color: #000000;
+        font-size: 200px;
+    }
+    @media screen and (max-width: 768px) {
+        .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+        }
+        .fa-angle-down {
+            color: #4D5061;
+        }
+        footer {
+            height: 10vh;
+        }
+</style>
 
 <body>
-    <div class="container-fuild mx-0 descripcion">
-        <div class="container">
-            <p>Curriculum de Yampi. El administrador de sistemas antisistemas.</p>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="http://placehold.it/60x60" alt="Your Brand Name"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">About Me <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a>
+                                    </li>
+                                    <li><a href="#">Another action</a>
+                                    </li>
+                                    <li><a href="#">Something else here</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Units <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a>
+                                    </li>
+                                    <li><a href="#">Another action</a>
+                                    </li>
+                                    <li><a href="#">Something else here</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Clients</a>
+                            </li>
+                            <li><a href="#contact-me">Contact Me</a>
+                            </li>
+                        </ul>
+                      </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+        </nav>
+
+
+    <section class="section1">
+
+
+        <div class="hero"></div>
+
+        <i class="fa fa-angle-down" style="font-size:100px;"></i>
+
+    </section>
+    <section class="section2">
+        <div class="banner">
+            <h1>What I can offer you</h1>
+            <p> Feel free to contact me regarding any </p>
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-off logo-small"></span>
+                        <h4>Availability</h4>
+                        <p>You can expect a response with 24 hours of the sent message. </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+    <section id="contact-me" class="contact_section">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </section>
+    <script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
-
+<footer>
+</footer>
 </html>
