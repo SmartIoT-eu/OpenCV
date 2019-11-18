@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'base.apps.BaseConfig',
     'django.contrib.staticfiles',
     'compressor',
+    'base',
+    'social.apps.SocialConfig',
+    'core.apps.ProfileApp',
     'ckeditor',
 ]
 
@@ -151,7 +153,7 @@ STATICFILES_DIRS =[ os.path.join(BASE_DIR, 'static'), ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-COMPRESS_ROOT = 'base/static'
+COMPRESS_ROOT = 'core/static'
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
