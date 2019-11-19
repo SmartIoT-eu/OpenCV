@@ -11,11 +11,11 @@
     <!-- Estilos y fuentes del template  -->
     
 {% load static %}
+{% load compress %}
 
-
-
-    <link type="text/x-scss" href="{% static './base/base.css' %}" rel="stylesheet" media="screen">
-
+{% compress css %}
+    <link type="text/x-scss" href="{% static './theme.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
 
 </head>
 
@@ -23,11 +23,11 @@
     <!--descripción de la web -->
         <div class="container-fuild mx-0 my-0 descripcion">
         <div class="container">
-            <p>OpenCV. La mejor web en donde crear tu CV.</p>
+            <p>Curriculum de Yampi. El administrador de sistemas antisistemas.</p>
         </div>
     </div>
     <!--Cabecera y menú -->
-
+  {% include "core/header.html" %}
 
       <div class="container-fuild">
         <div class="container">
@@ -43,11 +43,22 @@
 
 
   <!--Contenido-->
-
+  <div class="container profile_detail">
+            <div class="row">
+      {% include "core/profile_detail.html" %}
+      </div>
+  </div>
   {% block content %}
   
   {% endblock content %}
+  
 
+
+    <!-- Pié de página -->
+    {% include 'core/footer.html' %}
+    <!-- Bootstrap y Javascripts -->
+    {% comment %} <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'base/js/bootstrap.bundle.min.js' %}"></script> {% endcomment %}
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
