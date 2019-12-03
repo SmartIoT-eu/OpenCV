@@ -5,16 +5,25 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
 }
 
-.container-fluid.my-0.mx-0 {
-    padding: 0 !important;
+a {
+    text-decoration: none;
 }
 
 li a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700 !important;
-    color: #69F0C5 !important;
+    color: #69F0C5;
+    margin-left: 20px;;
+}
+
+li a.active {
+    color: white;
 }
 
 h1 {
@@ -24,7 +33,7 @@ h1 {
 
 /* Navbar */
 
-nav.navbar.navbar-expand-lg {
+nav {
     padding-left: 500px;
     padding-right: 500px;
     background: #526CEA !important;
@@ -34,7 +43,17 @@ nav.navbar.navbar-expand-lg {
     transition: .2s all !important;
 }
 
-img.img-fluid.logo {
+nav ul {
+    float: right;
+    position: relative;
+    top: 20px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+img.logo {
     max-width: 90px;
     max-height: 90px;
 }
@@ -46,10 +65,16 @@ img.img-fluid.logo {
 /*description*/
 
 .description {
-    background: linear-gradient(45deg, #5C56F2 0%, #3C95D6 100%) !important;
+    /*background: linear-gradient(45deg, #5C56F2 0%, #3C95D6 100%) !important;*/
+    color: white;
+    text-align: center;
 }
 
-.container-fluid.my-0.mx-0 {
+.description h1 {
+    text-transform: uppercase;
+}
+
+.background {
     background: url("./bg-gradient-top.svg") !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -61,7 +86,7 @@ h1.text-white.text-uppercase.jumbotron {
     font-weight: 900 !important;
     text-align: center;
     margin-bottom: -90px !important;
-}
+}*/
 
 .content-mini {
     background: transparent;
@@ -102,6 +127,16 @@ p.mx-2 {
     color: #526CEA;
 }
 
+#buttons {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#buttons p {
+    display: inline-block;
+    margin: 20px;
+}
+
 /* fin description */
 
 #modelo {
@@ -115,7 +150,8 @@ p.mx-2 {
 #modelo .icon {
     font-size: 48px;
     color: bisque;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    margin-top: 25px;
 }
 
 .primer {
