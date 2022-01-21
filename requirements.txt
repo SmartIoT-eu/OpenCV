@@ -22,7 +22,7 @@ djangorestframework==3.10.3
 draftjs-exporter==2.1.7
 html5lib==0.999999999
 idna==2.8
-ipython==7.9.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 jedi==0.15.1
 libsass==0.19.4
